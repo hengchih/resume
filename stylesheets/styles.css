@@ -1,0 +1,186 @@
+/* line 9, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 18, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 21, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 28, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+/* line 34, ../sass/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+/* line 39, ../sass/_reset.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 42, ../sass/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 47, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_layout.sass */
+body {
+  font-family: "Montserrat", "Microsoft JhengHei", sans-serif;
+}
+
+/* line 4, ../sass/_layout.sass */
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #2ea7e0;
+  z-index: 3;
+}
+
+/* line 13, ../sass/_layout.sass */
+.nav-ul {
+  width: 100%;
+  height: 100%;
+  max-width: 680px;
+  float: right;
+  overflow: auto;
+}
+
+/* line 20, ../sass/_layout.sass */
+.nav-li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* line 25, ../sass/_layout.sass */
+.nav-link {
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", "Microsoft JhengHei", sans-serif;
+}
+
+/* line 32, ../sass/_layout.sass */
+.level1-container {
+  width: 100%;
+  position: relative;
+}
+
+/* line 36, ../sass/_layout.sass */
+.full-height {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* line 1, ../sass/_svg.sass */
+.svg-picture[svg-portrait] {
+  position: absolute;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+/* line 6, ../sass/_svg.sass */
+.svg-picture[svg-skills] {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+/* line 2, ../sass/_cover.sass */
+#cover .cover-text {
+  padding-top: 40px;
+  margin-top: 50vh;
+}
+/* line 5, ../sass/_cover.sass */
+#cover .cover-text .year, #cover .cover-text .title {
+  color: #2ea7e0;
+  text-shadow: 0 0 5px white;
+  font-size: 65px;
+  text-align: right;
+}
+
+/* line 1, ../sass/_experience.sass */
+#experience {
+  background: #2ea7e0;
+}
+/* line 3, ../sass/_experience.sass */
+#experience .title {
+  color: white;
+  text-shadow: 0 0 5px #2ea7e0;
+  font-size: 40px;
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+/* line 1, ../sass/_listBoard.sass */
+.list-board {
+  line-height: 1.8;
+  font-family: "Montserrat", "Microsoft JhengHei", sans-serif;
+  color: white;
+  width: 70%;
+  margin: 12px auto;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+/* line 10, ../sass/_listBoard.sass */
+.list-board .list-board-title {
+  background: white;
+  color: #2ea7e0;
+}
+/* line 14, ../sass/_listBoard.sass */
+.list-board .list-board-ul {
+  padding: 0 0 0 25px;
+  list-style-type: circle;
+}

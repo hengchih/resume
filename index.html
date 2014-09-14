@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html id="ng-app" class="ng-app:resume" ng-app="resume">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>resume of hengchih</title>
+    <link rel="stylesheet" href="stylesheets/styles.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>-->
+    <!--[if lte IE 8]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
-<body>
+<body ng-controller="resumeCtrl">
+<header id="header">
+    <nav id="nav">
+        <ul class="nav-ul">
+            <li id="nav-experience" class="nav-li"><a class="nav-link" href="#Experience">Experience</a></li>
+            <li id="nav-skills" class="nav-li"><a class="nav-link" href="#Skills">Skills</a></li>
+            <li id="nav-portfolio" class="nav-li"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="cover" class="level1-container full-height">
+    <div class="svg-picture" svg-portrait></div>
+    <div class="cover-text">
+        <div class="year">2014</div>
+        <h1 class="title">RESUME OF HENGCHIH</h1>
+    </div>
+</div>
+<div id="experience" class="level1-container full-height">
+    <h2 class="title">Experience</h2>
+    <div class="list-board">
+        <h3 class="list-board-title">網頁前端工程師，多奇數位創意(大心)，2013.7-至今</h3>
+        <ul class="list-board-ul">
+            <li class="list-board-li">使用HTML5、Javascript、CSS開發網頁前端功能</li>
+            <li class="list-board-li">使用Angularjs開發SPA網頁</li>
+            <li class="list-board-li">使用D3.js開發視覺化報表</li>
+        </ul>
+    </div>
+    <div class="list-board">
+        <h3 class="list-board-title">網頁工程師，經緯衛星資訊股份有限公司，2013.1-2013.7</h3>
+        <ul class="list-board-ul">
+            <li class="list-board-li">使用ASP.NET、MSSQL、Javascript、CSS開發網站功能</li>
+            <li class="list-board-li">設計公司電子報版型</li>
+            <li class="list-board-li">開發公司內部零用金申請系統</li>
+        </ul>
+    </div>
+    <div class="list-board">
+        <h3 class="list-board-title">ERP工程師，湧佳科技，2011.12-2012.12</h3>
+        <ul class="list-board-ul">
+            <li class="list-board-li">使用VB、MSSQL維護與開發ERP、人事出勤、會計產品</li>
+            <li class="list-board-li">開發成本分析BOM表功能</li>
+            <li class="list-board-li">開發2代健保薪資計算功能</li>
+        </ul>
+    </div>
+    <div class="list-board">
+        <h3 class="list-board-title">專案與教學助理，南台科技大學視傳系與多樂系，2007.06-2009.02；2010.11-2011.04</h3>
+        <ul class="list-board-ul">
+            <li class="list-board-li">專案規劃:100年度教育部推動技專校院與產業園區產學合作計畫</li>
+            <li class="list-board-li">專案規劃:100行政院科學教育實作型成品設計製作研究計畫-科技故事屋</li>
+            <li class="list-board-li">專案規劃:感性生活互動科技全方位感知整合</li>
+            <li class="list-board-li">教學助理(課程名稱:符號學理論)</li>
+        </ul>
+    </div>
+</div>
+<div id="skills" class="level1-container full-height">
+    <div class="svg-picture" svg-skills></div>
+    <h2 class="title">Skills</h2>
+    <div>
+        <ul>
+            <li>前端: HTML5、SVG、Javascript、CSS、SASS、Angularjs、D3.js、Cocos2d</li>
+            <li>後端: Node.js、Express、ASP.NET</li>
+            <li>資料庫: TSQL、Mongodb</li>
+            <li>設計: Adobe Photoshop、Adobe Illustrator</li>
+            <li>其他: git</li>
+        </ul>
+    </div>
+</div>
+<div id="portfolio" class="level1-container">
 
+</div>
+
+<!--script-->
+<script src="scripts/main.js"></script>
 </body>
 </html>
