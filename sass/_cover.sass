@@ -2,10 +2,22 @@
   .cover-text
     padding-top: 40px
     margin-top: 50vh
+    @media screen and (max-width: $point1)
+      text-align: left
+    @media screen and (max-width: $point2)
+      margin-top: 0
     .year
+      font-family: 'Montserrat'
       color: $main-color
       +text-shadow(0 0 5px $second-color)
       font-size: 65px
       text-align: right
+      @media screen and (max-width: $point1)
+        margin-top: 0
+      @media screen and (max-width: $point2)
+        text-align: center
+      @media screen and (max-width: $point3)
+        font-size: 55px
+        margin-top: 20px
     .title
       @extend .year

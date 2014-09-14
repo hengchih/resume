@@ -1,15 +1,20 @@
 .list-board
   line-height: 1.8
-  font-family: "Montserrat", "Microsoft JhengHei", sans-serif
+  font-family: $en-font-family
   color: $second-color
   width: 70%
   margin: 12px auto
   border: 1px solid $second-color
   box-sizing: border-box
+  @media screen and (max-width: $point2)
+    width: 85%
 
   .list-board-title
     background: $second-color
     color: $main-color
+    font-size: 18px
+    font-weight: 100
+    padding-left: 5px
 
   .list-board-ul
     padding: 0 0 0 25px

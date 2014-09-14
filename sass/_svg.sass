@@ -2,10 +2,14 @@
   position: absolute
   overflow: hidden
   max-height: 100vh
+  z-index: -1
 
 .svg-picture[svg-skills]
-  position: relative
-  float: left
-  overflow: hidden
+  position: absolute
   max-height: 100vh
+  z-index: -1
+  right: 0
+  bottom: 0
+  @media screen and (max-width: $point1)
+    display: none
 
