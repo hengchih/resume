@@ -1,15 +1,29 @@
 body
   font-family: $en-font-family
+  background: $second-color
 
 #header
-  position: fixed
+
   width: 100%
   left: 0
   right: 0
-  background: $main-color
   z-index: 3
-  @media screen and (max-width: $point2)
-    border-bottom: 1px solid $second-color
+
+  &.absolute
+    position: absolute
+    top: 50%
+    @media screen and (max-width: $point1)
+      top: 45%
+
+  &.fixed
+    position: fixed
+    top: 0
+    .nav-ul
+      max-width: none
+      .active
+        +box-shadow(0 0 10px #323232)
+
+  +transition(all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55))
 
 .nav-ul
   width: 100%
@@ -17,6 +31,7 @@ body
   max-width: 680px
   float: right
   overflow: auto
+  background: $third-color
   @media screen and (max-width: $point1)
     float: none
     margin: 0 auto
@@ -25,13 +40,30 @@ body
   float: left
   width: 33.33%
   text-align: center
+  background: $third-color
+  box-sizing: border-box
+  a.nav-link
+    color: $main-color
+    text-shadow: 0 0 2px $main-color
+  &:hover
+    background: lighten($main-color,10%)
+    a.nav-link
+      color: $second-color
+      +text-shadow(0 0 2px $second-color)
+  &.active
+    background: $main-color
+    a.nav-link
+      color: $second-color
+      text-shadow: 0 0 2px $second-color
 
 .nav-link
+  display: block
   height: 40px
   line-height: 40px
   color: $second-color
-  font-size: 24px
+  font-size: 18px
   font-family: $en-font-family
+  text-shadow: 0 0 2px $second-color
   @media screen and (max-width: $point3)
     font-size: 16px
 
@@ -44,3 +76,13 @@ body
   overflow: hidden
 
 
+#footer
+  width: 100%
+  padding: 8px 0
+  text-align: center
+  color: $main-color
+  background: #161614
+  box-sizing: border-box
+  font-weight: bolder
+  font-size: 16px
+  +text-shadow(0 0 2px $main-color)

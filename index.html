@@ -12,13 +12,23 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body ng-controller="resumeCtrl">
-<header id="header">
+<body ng-controller="resumeCtrl" ng-scroll>
+<header id="header" class="absolute">
     <nav id="nav">
         <ul class="nav-ul">
-            <li id="nav-experience" class="nav-li"><a class="nav-link" href="#experience">Experience</a></li>
-            <li id="nav-skills" class="nav-li"><a class="nav-link" href="#skills">Skills</a></li>
-            <li id="nav-portfolio" class="nav-li"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li id="nav-cover" class="nav-li active"><a class="nav-link" href="#cover">封面</a></li>
+            <li id="nav-experience" class="nav-li"><a class="nav-link" href="#experience">工作經驗</a></li>
+            <li id="nav-portfolio" class="nav-li">
+                <a class="nav-link" href="#portfolio">作品集</a>
+                <select id="filter-portfolio" style="display: none">
+                    <option value="前端工程">前端工程</option>
+                    <option value="遊戲設計">遊戲設計</option>
+                    <option value="科技藝術">科技藝術</option>
+                    <option value="視覺設計">視覺設計</option>
+                    <option value="後端工程">後端工程</option>
+                    <option value="專案企劃">專案企劃</option>
+                </select>
+            </li>
         </ul>
     </nav>
 </header>
@@ -30,92 +40,78 @@
     </div>
 </div>
 <div id="experience" class="level1-container full-height">
-    <h2 class="title">Experience</h2>
-    <div class="list-board">
-        <h3 class="list-board-title">網頁前端工程師，多奇數位創意(大心)，2013.7-至今</h3>
+    <!--<h2 class="title">Experience</h2>-->
+    <div class="list-board" ng-class="{'even':$index%2==0, 'odd':$index%2!=0}" ng-repeat="item in experience">
+        <div class="list-board-title">
+            <span class="start-time">{{item.start}}</span>
+            <span class="end-time">{{item.end}}</span>
+            <h3 class="company">{{item.name}}，{{item.company}}</h3>
+        </div>
         <ul class="list-board-ul">
-            <li class="list-board-li">使用HTML5、Javascript、CSS開發網頁前端功能</li>
-            <li class="list-board-li">使用Angularjs開發SPA網頁</li>
-            <li class="list-board-li">使用D3.js開發視覺化報表</li>
-        </ul>
-    </div>
-    <div class="list-board">
-        <h3 class="list-board-title">網頁工程師，經緯衛星資訊股份有限公司，2013.1-2013.7</h3>
-        <ul class="list-board-ul">
-            <li class="list-board-li">使用ASP.NET、MSSQL、Javascript、CSS開發網站功能</li>
-            <li class="list-board-li">設計公司電子報版型</li>
-            <li class="list-board-li">開發公司內部零用金申請系統</li>
-        </ul>
-    </div>
-    <div class="list-board">
-        <h3 class="list-board-title">ERP工程師，湧佳科技，2011.12-2012.12</h3>
-        <ul class="list-board-ul">
-            <li class="list-board-li">使用VB、MSSQL維護與開發ERP、人事出勤、會計產品</li>
-            <li class="list-board-li">開發成本分析BOM表功能</li>
-            <li class="list-board-li">開發2代健保薪資計算功能</li>
-        </ul>
-    </div>
-    <div class="list-board">
-        <h3 class="list-board-title">專案與教學助理，南台科技大學視傳系與多樂系，2007.06-2009.02；2010.11-2011.04</h3>
-        <ul class="list-board-ul">
-            <li class="list-board-li">專案規劃:100年度教育部推動技專校院與產業園區產學合作計畫</li>
-            <li class="list-board-li">專案規劃:100行政院科學教育實作型成品設計製作研究計畫-科技故事屋</li>
-            <li class="list-board-li">專案規劃:感性生活互動科技全方位感知整合</li>
-            <li class="list-board-li">教學助理(課程名稱:符號學理論)</li>
+            <li class="list-board-li" ng-repeat="data in item.description">{{data}}</li>
         </ul>
     </div>
 </div>
-<div id="skills" class="level1-container full-height">
+<!--<div id="skills" class="level1-container full-height">
     <div class="svg-picture" svg-skills></div>
     <div class="skills-list">
         <h2 class="title">Skills</h2>
         <div class="list-tag">
             <h3 class="list-tag-title">前端:</h3>
             <ul  class="list-tag-ul">
-                <li class="list-tag-li">HTML5</li>
-                <li class="list-tag-li">SVG</li>
-                <li class="list-tag-li">Javascript</li>
-                <li class="list-tag-li">CSS</li>
-                <li class="list-tag-li">SASS</li>
-                <li class="list-tag-li">Angularjs</li>
-                <li class="list-tag-li">D3.js</li>
-                <li class="list-tag-li">Cocos2d</li>
+                <li class="list-tag-li" ng-repeat="item in skillModel.front">{{item}}</li>
             </ul>
         </div>
         <div class="list-tag">
             <h3 class="list-tag-title">後端:</h3>
             <ul class="list-tag-ul">
-                <li class="list-tag-li">Node.js</li>
-                <li class="list-tag-li">Express</li>
-                <li class="list-tag-li">ASP.NET</li>
+                <li class="list-tag-li" ng-repeat="item in skillModel.back">{{item}}</li>
             </ul>
         </div>
         <div class="list-tag">
             <h3 class="list-tag-title">資料庫:</h3>
             <ul class="list-tag-ul">
-                <li class="list-tag-li">TSQL</li>
-                <li class="list-tag-li">Mongodb</li>
+                <li class="list-tag-li" ng-repeat="item in skillModel.db">{{item}}</li>
             </ul>
         </div>
         <div class="list-tag">
             <h3 class="list-tag-title">設計:</h3>
             <ul class="list-tag-ul">
-                <li class="list-tag-li">Adobe Photoshop</li>
-                <li class="list-tag-li">Adobe Illustrator</li>
+                <li class="list-tag-li" ng-repeat="item in skillModel.design">{{item}}</li>
             </ul>
         </div>
         <div class="list-tag">
             <h3 class="list-tag-title">其他:</h3>
             <ul class="list-tag-ul">
-                <li class="list-tag-li">git</li>
+                <li class="list-tag-li" ng-repeat="item in skillModel.other">{{item}}</li>
             </ul>
         </div>
     </div>
+</div>-->
+<div id="portfolio" class="level1-container" ng-controller="portfolioCtrl">
+    <!--<h2 class="title">Portfolio</h2>-->
+    <div>
+        <div class="portfolio-card" ng-repeat="item in portfolioModel">
+            <div class="work-img-container">
+                <img class="work-img" ng-src="images/{{item.Name}}/1.jpg"/>
+            </div>
+            <div class="work-info">
+                <h3 class="work-title">{{item.Name}}</h3>
+                <p>{{item.Time}}{{item.Way}}<a class="work-link {{item.Link!=''}}" ng-href="{{item.Link}}" target="_blank">作品連結</a></p>
+                <ul class="work-ul">
+                    <li class="work-li work-type" ng-repeat="type in item.Type">{{type}}</li>
+                </ul>
+                <ul class="work-ul work-skill">
+                    <li class="work-li work-skill" ng-repeat="skill in item.Skill">{{skill}}</li>
+                </ul>
+                <p class="work-description">{{item.Description}}</p>
+            </div>
+        </div>
+    </div>
 </div>
-<div id="portfolio" class="level1-container">
-
+<div id="footer">
+    Email: lovesenyea@gmail.com
 </div>
-
 <!--script-->
 <script src="scripts/main.js"></script>
 </body>

@@ -1,0 +1,84 @@
+#portfolio
+  background: $main-color
+  padding-top: 80px
+  overflow: auto
+
+  p
+    margin: 5px 0
+    line-height: 1.2
+
+  .title
+    color: $second-color
+    text-align: right
+    +text-shadow(0 0 5px $main-color)
+    font-size: 40px
+    width: 90%
+    min-width: 320px
+    padding-bottom: 10px
+    margin: 0 auto
+
+  .portfolio-card
+    background: $second-color
+    width: 20%
+    min-width: 310px
+    padding: 5px
+    float: left
+    height: 450px
+    overflow: auto
+    margin: 8px
+    @media screen and (max-width: $point1)
+      float: none
+      margin: 10px auto
+      width: 90%
+      height: auto
+      min-width: inherit
+
+    .work-img-container
+      width: 100%
+      text-align: center
+      float: left
+
+      .work-img
+        width: 100%
+        +border-radius(5px)
+        @media screen and (min-width: $point1)
+          width: auto
+          max-height: 140px
+          max-width: 297px
+
+    .work-info
+      float: left
+      color: $main-color
+
+  .work-ul
+    overflow: auto
+    padding: 5px 0
+  .work-li
+    float: left
+    background: $main-color
+    +border-radius(3px)
+    padding: 4px
+    margin: 1px
+    color: $second-color
+
+    &.work-skill
+      background: $second-color
+      color: $main-color
+      border: 1px solid $main-color
+
+  .work-link
+    float: right
+    background: #161614
+    color: lighten($main-color,5%)
+    padding: 2px 5px
+    &.false
+      color: #fff
+      background: #fff
+
+  .work-title
+    font-size: 20px
+    padding: 10px 0
+    color: $main-color
+    font-weight: 100
+    +text-shadow(0 0 2px $main-color)
+    clear: both
