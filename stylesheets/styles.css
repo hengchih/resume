@@ -481,7 +481,7 @@ path {
 /* line 1, ../sass/_portfolio.sass */
 #portfolio {
   background: #19a3a1;
-  padding-top: 80px;
+  padding-top: 60px;
   overflow: auto;
 }
 /* line 6, ../sass/_portfolio.sass */
@@ -510,6 +510,7 @@ path {
   height: 450px;
   overflow: auto;
   margin: 8px;
+  border-bottom: 2px solid #1E6B72;
 }
 @media screen and (max-width: 1225px) {
   /* line 20, ../sass/_portfolio.sass */
@@ -521,13 +522,13 @@ path {
     min-width: inherit;
   }
 }
-/* line 36, ../sass/_portfolio.sass */
+/* line 37, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-img-container {
   width: 100%;
   text-align: center;
   float: left;
 }
-/* line 41, ../sass/_portfolio.sass */
+/* line 42, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-img-container .work-img {
   width: 100%;
   -moz-border-radius: 5px;
@@ -535,24 +536,24 @@ path {
   border-radius: 5px;
 }
 @media screen and (min-width: 1225px) {
-  /* line 41, ../sass/_portfolio.sass */
+  /* line 42, ../sass/_portfolio.sass */
   #portfolio .portfolio-card .work-img-container .work-img {
     width: auto;
     max-height: 140px;
     max-width: 297px;
   }
 }
-/* line 49, ../sass/_portfolio.sass */
+/* line 50, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-info {
   float: left;
   color: #19a3a1;
 }
-/* line 53, ../sass/_portfolio.sass */
+/* line 54, ../sass/_portfolio.sass */
 #portfolio .work-ul {
   overflow: auto;
   padding: 5px 0;
 }
-/* line 56, ../sass/_portfolio.sass */
+/* line 57, ../sass/_portfolio.sass */
 #portfolio .work-li {
   float: left;
   background: #19a3a1;
@@ -563,25 +564,25 @@ path {
   margin: 1px;
   color: #ffffff;
 }
-/* line 64, ../sass/_portfolio.sass */
+/* line 65, ../sass/_portfolio.sass */
 #portfolio .work-li.work-skill {
   background: #ffffff;
   color: #19a3a1;
   border: 1px solid #19a3a1;
 }
-/* line 69, ../sass/_portfolio.sass */
+/* line 70, ../sass/_portfolio.sass */
 #portfolio .work-link {
   float: right;
   background: #161614;
   color: #1cb9b7;
   padding: 2px 5px;
 }
-/* line 74, ../sass/_portfolio.sass */
+/* line 75, ../sass/_portfolio.sass */
 #portfolio .work-link.false {
   color: #fff;
   background: #fff;
 }
-/* line 78, ../sass/_portfolio.sass */
+/* line 79, ../sass/_portfolio.sass */
 #portfolio .work-title {
   font-size: 20px;
   padding: 10px 0;

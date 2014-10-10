@@ -393,7 +393,7 @@
                 Time:'2013年3月',
                 Name: "2013高雄市電腦展參賽海報-雲端生活",
                 Way: way.Single,
-                Link: "",
+                Link: "/resume/images/2013高雄市電腦展參賽海報-雲端生活/1.jpg",
                 Skill: ['Adobe Illustrator'],
                 Description: "這是報名參加2013高雄市電腦展海報競賽的作品，雖然最後沒有得名，但是創作的過程是快樂的。",
                 Images:['1.jpg']
