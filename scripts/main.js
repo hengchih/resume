@@ -254,18 +254,38 @@
 
     function portfolio(type) {
         var way = {
-            Single: "個人開發",
-            Team: "團隊開發"
+            Single: "個人獨立開發",
+            Team: "團隊合作開發"
         };
         var data = [
             {
-                Type: [type.Game,type.Visual,type.FrontEnd],
-                Time:'2014年9月',
-                Name: "玉兔臨風",
-                Way: way.Single,
-                Link: "http://hengchih.github.io/rabbit/MyJSGame/index.html",
-                Skill: ['Cocos2d-js','Cocostudio','javascript','Adobe illustrator','CSS'],
-                Description: "2014年中秋節在家烤肉時忽然而來的創作靈感，然後有靈感後我馬上一邊學Cocos2d一邊直接創作，雖然之前沒用過Cocos2d-js，但畢竟就是javascript，所以摸著摸著就作出來了。",
+                Type: [type.FrontEnd],
+                Time:'2013年9月',
+                Name: "Goo2手車訊",
+                Way: way.Team,
+                Link: "https://used.goo-net.com.tw/",
+                Skill: ['AngularJS','javascript'],
+                Description: "在多奇數位創意任職期間所經歷的一個大案子，我負責會員中心前端的SPA開發，跟後端工程師合作套用API，開發過程讓我學習到了許多開發大型網站的溝通合作技巧。",
+                Images:['1.jpg']
+            },
+            {
+                Type: [type.FrontEnd,type.Visual],
+                Time:'2013年8月',
+                Name: "MovieCaker",
+                Way: way.Team,
+                Link: "http://www.moviecaker.com/",
+                Skill: ['jQuery','Adobe Photoshop','Adobe Illustrator','CSS','ASP.NET MVC(VIEW)'],
+                Description: "這是我任職多奇數位創意期間的一個維護案，這案子不是採用前後端API溝通的方式，而是採用ASP.NET MVC的架構，因此維護過程讓學習到了如何修改VIEW的部分。",
+                Images:['1.jpg']
+            },
+            {
+                Type: [type.FrontEnd],
+                Time:'2014年5月',
+                Name: "視覺化報表開發",
+                Way: way.Team,
+                Link: "",
+                Skill: ['AngularJS','D3.js','javascript','CSS','SASS'],
+                Description: "在多奇數位創意任職期間的一個案子，我負責前端的報表圖形化介面開發，並和後端工程師合作套用API，開發過程學習到了許多SVG的應用方式",
                 Images:['1.jpg']
             },
             {
@@ -279,13 +299,13 @@
                 Images:['1.jpg']
             },
             {
-                Type: [type.FrontEnd],
-                Time:'2014年5月',
-                Name: "視覺化報表開發",
-                Way: way.Team,
-                Link: "",
-                Skill: ['AngularJS','D3.js','javascript','CSS','SASS'],
-                Description: "在多奇數位創意任職期間的一個案子，我負責前端的報表圖形化介面開發，並和後端工程師合作套用API，開發過程學習到了許多SVG的應用方式",
+                Type: [type.Game,type.Visual,type.FrontEnd],
+                Time:'2014年9月',
+                Name: "玉兔臨風",
+                Way: way.Single,
+                Link: "http://hengchih.github.io/rabbit/MyJSGame/index.html",
+                Skill: ['Cocos2d-js','Cocostudio','javascript','Adobe illustrator','CSS'],
+                Description: "2014年中秋節在家烤肉時忽然而來的創作靈感，然後有靈感後我馬上一邊學Cocos2d一邊直接創作，雖然之前沒用過Cocos2d-js，但畢竟就是javascript，所以摸著摸著就作出來了。",
                 Images:['1.jpg']
             },
             {
@@ -309,16 +329,6 @@
                 Images:['1.jpg']
             },
             {
-                Type: [type.FrontEnd],
-                Time:'2013年9月',
-                Name: "Goo2手車訊",
-                Way: way.Team,
-                Link: "https://used.goo-net.com.tw/",
-                Skill: ['AngularJS','javascript'],
-                Description: "在多奇數位創意任職期間所經歷的一個大案子，我負責會員中心前端的SPA開發，跟後端工程師合作套用API，開發過程讓我學習到了許多開發大型網站的溝通合作技巧。",
-                Images:['1.jpg']
-            },
-            {
                 Type: [type.DigitalArt,type.Visual],
                 Time:'2013年9月',
                 Name: "新Titanic",
@@ -326,16 +336,6 @@
                 Link: "https://www.facebook.com/hengchih.chang/posts/10151645163366984",
                 Skill: ['Processing','Adobe Flash'],
                 Description: "在2013年9月終於有這機會和另外兩個夥伴和一名舞者合作發表科技和舞蹈結合的科技藝術作品，故事內容改編鐵達尼號，訴說蘿絲若是選擇和傑克一起沉入海中的一段戲劇表現，技術部份我主要負責動畫製作，和夥伴一起發想的過程以及跨領域的結合十分有趣。",
-                Images:['1.jpg']
-            },
-            {
-                Type: [type.FrontEnd,type.Visual],
-                Time:'2013年8月',
-                Name: "MovieCaker",
-                Way: way.Team,
-                Link: "http://www.moviecaker.com/",
-                Skill: ['jQuery','Adobe Photoshop','Adobe Illustrator','CSS','ASP.NET MVC(VIEW)'],
-                Description: "這是我任職多奇數位創意期間的一個維護案，這案子不是採用前後端API溝通的方式，而是採用ASP.NET MVC的架構，因此維護過程讓學習到了如何修改VIEW的部分。",
                 Images:['1.jpg']
             },
             {
