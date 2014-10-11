@@ -275,7 +275,7 @@
                 Way: way.Team,
                 Link: "http://www.moviecaker.com/",
                 Skill: ['jQuery','Adobe Photoshop','Adobe Illustrator','CSS','ASP.NET MVC(VIEW)'],
-                Description: "這是我任職多奇數位創意期間的一個維護案，這案子不是採用前後端API溝通的方式，而是採用ASP.NET MVC的架構，因此維護過程讓學習到了如何修改VIEW的部分。",
+                Description: "這是我任職多奇數位創意期間的一個維護案，這案子不是採用前後端API溝通的方式，而是採用ASP.NET MVC的架構，因此維護過程讓學習到了如何修改VIEW的技巧。",
                 Images:['1.jpg']
             },
             {
@@ -305,7 +305,7 @@
                 Way: way.Single,
                 Link: "http://hengchih.github.io/rabbit/MyJSGame/index.html",
                 Skill: ['Cocos2d-js','Cocostudio','javascript','Adobe illustrator','CSS'],
-                Description: "2014年中秋節在家烤肉時忽然而來的創作靈感，然後有靈感後我馬上一邊學Cocos2d一邊直接創作，雖然之前沒用過Cocos2d-js，但畢竟就是javascript，所以摸著摸著就作出來了。",
+                Description: "2014年中秋節在家烤肉時忽然而來的創作靈感，有靈感後我馬上一邊學Cocos2d一邊直接創作，雖然之前沒用過Cocos2d-js處處碰壁，但好險關關難過關關過，還是趕在中秋節結束之際完成了這個作品。",
                 Images:['1.jpg']
             },
             {
@@ -365,7 +365,7 @@
                 Way: way.Single,
                 Link: "https://www.facebook.com/photo.php?fbid=10151720967726984&set=a.477285606983.254880.743241983&type=3&theater",
                 Skill: ['Adobe Photoshop','Adobe Illustrator'],
-                Description: "我針對AngularJS的語法特性，所設計的一款圖像設計，「Bind Your Hear , Chang Your Mind」。",
+                Description: "我針對AngularJS的語法特性，所設計的一款圖像設計，「Bind Your Heart , Chang Your Mind」。",
                 Images:['1.jpg']
             },
             {
@@ -435,7 +435,7 @@
                 Way: way.Single,
                 Link: "https://www.facebook.com/photo.php?fbid=10151276079211984&set=a.477285606983.254880.743241983&type=3&theater",
                 Skill: ['Adobe Illustrator','Adobe Photoshop','HTML'],
-                Description: "另外一款經緯衛星的電子報版型，因為公司裡面有無人飛機的攝影技術，所以我以此概念為出發點所作的一款設計。",
+                Description: "另外一款經緯衛星的電子報版型，因為公司裡面有無人飛機的攝影技術，所以這是我以此概念為出發點所作的一款設計。",
                 Images:['1.jpg']
             },
             {
@@ -456,6 +456,36 @@
                 Link: "",
                 Skill: ['ASP.NET','C#','MSSQL'],
                 Description: "在經緯衛星任職期間被指派開發的內部系統，一邊開發一邊摸索了些C#語法。",
+                Images:['1.jpg']
+            },
+            {
+                Type: [type.Game,type.DigitalArt],
+                Time:'2007年09月',
+                Name: "五行相生剋互動裝置",
+                Way: way.Team,
+                Link: "http://hengself.appspot.com/static/five.html",
+                Skill: ['Arduino','Adobe Flash'],
+                Description: "此作品是運用五行概念而完成的互動藝術裝置作品。我的部分負責軟體互動介面開發與Arduino程式撰寫。",
+                Images:['1.jpg']
+            },
+            {
+                Type: [type.Game,type.DigitalArt],
+                Time:'2007年08月',
+                Name: "互動式多媒體複孔格板投球裝置",
+                Way: way.Team,
+                Link: "http://youtu.be/SqjiUBsjBn4?t=32s",
+                Skill: ['Arduino','Adobe Flash'],
+                Description: "此作品結合互動技術與遊戲概念，並以投球遊戲為整體創作方向。我的部分負責軟體互動介面開發與Arduino程式撰寫。",
+                Images:['1.jpg']
+            },
+            {
+                Type: [type.Game],
+                Time:'2007年08月',
+                Name: "福衛3號網頁遊戲",
+                Way: way.Team,
+                Link: "",
+                Skill: ['Adobe Flash'],
+                Description: "此作品入圍了2007年的福衛三號衛星遊戲競賽參賽作品，我的部分負責遊戲邏輯程式功能。",
                 Images:['1.jpg']
             }
         ];

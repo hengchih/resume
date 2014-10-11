@@ -7,6 +7,21 @@
     margin: 5px 0
     line-height: 1.2
 
+  .card-container
+    width: 640px
+    margin: 0 auto
+    @media screen and (max-width: 654px)
+      width: 320px
+    @media screen and (max-width: $point3)
+      width: auto
+    @media screen and (min-width: $point980)
+      width: 960px
+    @media screen and (min-width: $point1300 - 1)
+      width: 1300px
+
+
+
+
   .title
     color: $second-color
     text-align: right
@@ -19,20 +34,19 @@
 
   .portfolio-card
     background: $second-color
-    width: 20%
-    min-width: 310px
+    width: 294px
     padding: 5px
     float: left
-    height: 450px
+    height: 475px
     overflow: auto
-    margin: 8px
+    margin: 13px
     border-bottom: 2px solid #1E6B72
-    @media screen and (max-width: $point1)
+    box-sizing: border-box
+    @media screen and (max-width: 654px)
       float: none
       margin: 10px auto
       width: 90%
       height: auto
-      min-width: inherit
 
     .work-img-container
       width: 100%
@@ -42,10 +56,10 @@
       .work-img
         width: 100%
         +border-radius(5px)
-        @media screen and (min-width: $point1)
+        @media screen and (min-width: 654px)
           width: auto
           max-height: 140px
-          max-width: 297px
+          max-width: 280px
 
     .work-info
       float: left

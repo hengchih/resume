@@ -490,6 +490,35 @@ path {
   line-height: 1.2;
 }
 /* line 10, ../sass/_portfolio.sass */
+#portfolio .card-container {
+  width: 640px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 654px) {
+  /* line 10, ../sass/_portfolio.sass */
+  #portfolio .card-container {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* line 10, ../sass/_portfolio.sass */
+  #portfolio .card-container {
+    width: auto;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 10, ../sass/_portfolio.sass */
+  #portfolio .card-container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1299px) {
+  /* line 10, ../sass/_portfolio.sass */
+  #portfolio .card-container {
+    width: 1300px;
+  }
+}
+/* line 25, ../sass/_portfolio.sass */
 #portfolio .title {
   color: #ffffff;
   text-align: right;
@@ -500,60 +529,59 @@ path {
   padding-bottom: 10px;
   margin: 0 auto;
 }
-/* line 20, ../sass/_portfolio.sass */
+/* line 35, ../sass/_portfolio.sass */
 #portfolio .portfolio-card {
   background: #ffffff;
-  width: 20%;
-  min-width: 310px;
+  width: 294px;
   padding: 5px;
   float: left;
-  height: 450px;
+  height: 475px;
   overflow: auto;
-  margin: 8px;
+  margin: 13px;
   border-bottom: 2px solid #1E6B72;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 1225px) {
-  /* line 20, ../sass/_portfolio.sass */
+@media screen and (max-width: 654px) {
+  /* line 35, ../sass/_portfolio.sass */
   #portfolio .portfolio-card {
     float: none;
     margin: 10px auto;
     width: 90%;
     height: auto;
-    min-width: inherit;
   }
 }
-/* line 37, ../sass/_portfolio.sass */
+/* line 51, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-img-container {
   width: 100%;
   text-align: center;
   float: left;
 }
-/* line 42, ../sass/_portfolio.sass */
+/* line 56, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-img-container .work-img {
   width: 100%;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-@media screen and (min-width: 1225px) {
-  /* line 42, ../sass/_portfolio.sass */
+@media screen and (min-width: 654px) {
+  /* line 56, ../sass/_portfolio.sass */
   #portfolio .portfolio-card .work-img-container .work-img {
     width: auto;
     max-height: 140px;
-    max-width: 297px;
+    max-width: 280px;
   }
 }
-/* line 50, ../sass/_portfolio.sass */
+/* line 64, ../sass/_portfolio.sass */
 #portfolio .portfolio-card .work-info {
   float: left;
   color: #19a3a1;
 }
-/* line 54, ../sass/_portfolio.sass */
+/* line 68, ../sass/_portfolio.sass */
 #portfolio .work-ul {
   overflow: auto;
   padding: 5px 0;
 }
-/* line 57, ../sass/_portfolio.sass */
+/* line 71, ../sass/_portfolio.sass */
 #portfolio .work-li {
   float: left;
   background: #19a3a1;
@@ -564,25 +592,25 @@ path {
   margin: 1px;
   color: #ffffff;
 }
-/* line 65, ../sass/_portfolio.sass */
+/* line 79, ../sass/_portfolio.sass */
 #portfolio .work-li.work-skill {
   background: #ffffff;
   color: #19a3a1;
   border: 1px solid #19a3a1;
 }
-/* line 70, ../sass/_portfolio.sass */
+/* line 84, ../sass/_portfolio.sass */
 #portfolio .work-link {
   float: right;
   background: #161614;
   color: #1cb9b7;
   padding: 2px 5px;
 }
-/* line 75, ../sass/_portfolio.sass */
+/* line 89, ../sass/_portfolio.sass */
 #portfolio .work-link.false {
   color: #fff;
   background: #fff;
 }
-/* line 79, ../sass/_portfolio.sass */
+/* line 93, ../sass/_portfolio.sass */
 #portfolio .work-title {
   font-size: 20px;
   padding: 10px 0;
