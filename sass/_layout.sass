@@ -72,7 +72,10 @@ body
   position: relative
 
 .full-height
+  min-height: 100vh
   overflow: hidden
+  @media screen and (min-height: 643px)
+    min-height: 643px
 
 
 #footer
