@@ -187,11 +187,10 @@ body {
 
 /* line 74, ../sass/_layout.sass */
 .full-height {
-  min-height: 100vh;
   overflow: hidden;
 }
 
-/* line 79, ../sass/_layout.sass */
+/* line 78, ../sass/_layout.sass */
 #footer {
   width: 100%;
   padding: 8px 0;
@@ -281,7 +280,7 @@ path {
 /* line 1, ../sass/_experience.sass */
 #experience {
   background: #19a3a1;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 /* line 4, ../sass/_experience.sass */
 #experience .title {
