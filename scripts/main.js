@@ -306,6 +306,16 @@
                 Images:['1.jpg']
             },
             {
+                Type: [type.Visual],
+                Time:'2014年9月',
+                Name: "AD&C",
+                Way: way.Single,
+                Link: "",
+                Skill: ['Adobe illustrator'],
+                Description: "幫朋友設計的一款 APP Layout。",
+                Images:['1.jpg']
+            },
+            {
                 Type: [type.FrontEnd],
                 Time:'2014年2月',
                 Name: "圓與線",
@@ -313,16 +323,6 @@
                 Link: "http://jsbin.com/ilUFoNA/14/edit",
                 Skill: ['Processing.js'],
                 Description: "無意間發現Processing竟然有js版本，於是乎摸索了一下語法並且做了個小作品。這功能比較像遊戲中的粒子系統，只是我加以變化一下讓他有種科技藝術的感覺。",
-                Images:['1.jpg']
-            },
-            {
-                Type: [type.Visual],
-                Time:'2013年10月',
-                Name: "紅綠熊",
-                Way: way.Single,
-                Link: "https://www.facebook.com/photo.php?fbid=10151701083276984&set=a.477285606983.254880.743241983&type=3&theater",
-                Skill: ['Adobe Illustrator'],
-                Description: "我在畫ICON的時候發現可以來個普普風熊熊，不是紅綠燈，是紅綠熊，趣味趣味。",
                 Images:['1.jpg']
             },
             {
@@ -334,6 +334,16 @@
                 Skill: ['Processing','Adobe Flash'],
                 Description: "在2013年9月終於有這機會和另外兩個夥伴和一名舞者合作發表科技和舞蹈結合的科技藝術作品，故事內容改編鐵達尼號，訴說蘿絲若是選擇和傑克一起沉入海中的一段戲劇表現，技術部份我主要負責動畫製作，和夥伴一起發想的過程以及跨領域的結合十分有趣。",
                 Images:['1.jpg']
+            },
+            {
+                Type: [type.FrontEnd,type.Visual],
+                Time:'2013年7月',
+                Name: "CSS獅",
+                Way: way.Single,
+                Link: "http://plnkr.co/edit/S5fL0JTeJE8eiLOEJBXc?p=preview",
+                Skill: ['CSS','HTML'],
+                Description: "單純只利用DIV和CSS而完成的小作品，我覺得偶而練習這種作品還滿有趣的，而且還能提升對網頁版面的掌握能力唷！",
+                Images:['1.png']
             },
             {
                 Type: [type.FrontEnd,type.Game],
